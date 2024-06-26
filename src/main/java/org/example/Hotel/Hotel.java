@@ -1,18 +1,30 @@
 package org.example.Hotel;
 
+import org.apache.solr.client.solrj.beans.Field;
+
 import java.util.List;
 
 public class Hotel {
+    @Field
     String city;
+    @Field
     String state;
+    @Field
     String country;
+    @Field
     String uid;
+    @Field
     List<String> facilities;
-    List<String> roomFacilities;
-    int reviewCount;
-    float reviewScore;
-    String hotelName;
-    String hotelType;
+    @Field
+    List<String> roomfacilities;
+    @Field
+    int reviewcount;
+    @Field
+    float reviewscore;
+    @Field
+    String hotelname;
+    @Field
+    String hoteltype;
 
     public String getCity() {
         return city;
@@ -54,43 +66,43 @@ public class Hotel {
         this.facilities = facilities;
     }
 
-    public List<String> getRoomFacilities() {
-        return roomFacilities;
+    public List<String> getRoomfacilities() {
+        return roomfacilities;
     }
 
-    public void setRoomFacilities(List<String> roomFacilities) {
-        this.roomFacilities = roomFacilities;
+    public void setRoomfacilities(List<String> roomfacilities) {
+        this.roomfacilities = roomfacilities;
     }
 
-    public int getReviewCount() {
-        return reviewCount;
+    public int getReviewcount() {
+        return reviewcount;
     }
 
-    public void setReviewCount(int reviewCount) {
-        this.reviewCount = reviewCount;
+    public void setReviewcount(int reviewcount) {
+        this.reviewcount = reviewcount;
     }
 
-    public float getReviewScore() {
-        return reviewScore;
+    public float getReviewscore() {
+        return reviewscore;
     }
 
-    public void setReviewScore(float reviewScore) {
-        this.reviewScore = reviewScore;
+    public void setReviewscore(float reviewscore) {
+        this.reviewscore = reviewscore;
     }
 
-    public String getHotelName() {
-        return hotelName;
+    public String getHotelname() {
+        return hotelname;
     }
 
-    public void setHotelName(String hotelName) {
-        this.hotelName = hotelName;
+    public void setHotelname(String hotelname) {
+        this.hotelname = hotelname;
     }
 
-    public String getHotelType() {
-        return hotelType;
+    public String getHoteltype() {
+        return hoteltype;
     }
 
-    public void setHoterType(String hotelType) {
-        this.hotelType = hotelType;
+    public void setHoteltype(String hoteltype) {
+        this.hoteltype = hoteltype;
     }
 }
